@@ -1,0 +1,1 @@
+This contract represents an asset with a name and a value that can be owned and updated by a single owner. It includes two functions: transferOwnership, which allows the current owner to transfer ownership of the asset to a new address, and updateValue, which allows the owner to update the value of the asset.
