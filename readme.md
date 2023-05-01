@@ -1,6 +1,6 @@
 This Solidity smart contract implements a Proof of Funds system.
 
-The purpose of the contract is to allow an external party to verify that a specific Ethereum account has a certain balance of an ERC777 token. The contract stores the address of the ERC777 token and the required balance that an account must have to be considered verified.
+This contract allows an external party to verify that a specific Ethereum account has a certain balance of an ERC777 token. The contract stores the address of the ERC777 token and the required balance that an account must have to be considered verified.
 
 constructor: This is the contract's constructor function, which takes two arguments: _erc777TokenAddress and _requiredBalance. It sets the owner, erc777TokenAddress, and requiredBalance state variables.
 
@@ -10,6 +10,6 @@ updateRequiredBalance: This function takes a _requiredBalance value as an argume
 
 withdraw: This function allows the contract's owner to withdraw any funds that have been sent to the contract. It transfers the balance of the contract to the owner address. This function can only be called by the contract's owner.
 
-Finally, the receive() function is a fallback function that does nothing but accept any incoming ether transactions.
+The receive() function is a fallback function that does nothing but accept any incoming ether transactions.
 
 Note that this contract does not implement the ERC777 interface. It only uses the balanceOf() function from the interface to check the balance of the ERC777 token.
