@@ -1,8 +1,8 @@
-This Solidity smart contract implements a Proof of Funds system.
+This Solidity smart contract implements a Proof of reserve system.
 
 This contract allows an external party to verify that a specific Ethereum account has a certain balance of an ERC777 token. The contract stores the address of the ERC777 token and the required balance that an account must have to be considered verified.
 
-constructor: This is the contract's constructor function, which takes two arguments: _erc777TokenAddress and _requiredBalance. It sets the owner, erc777TokenAddress, and requiredBalance state variables.
+constructor: This is the contract's constructor function, it takes two arguments: _erc777TokenAddress and _requiredBalance. It sets the owner, erc777TokenAddress, and requiredBalance state variables.
 
 verify: This function takes an account address as an argument and returns a boolean value. It uses the IERC777 interface to check the balance of the specified account and returns true if the balance is greater than or equal to the requiredBalance. 
 
